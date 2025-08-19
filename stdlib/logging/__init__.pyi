@@ -136,6 +136,7 @@ class Logger(Filterer):
         stack_info: bool = False,
         stacklevel: int = 1,
         extra: Mapping[str, object] | None = None,
+        **kwargs,
     ) -> None: ...
     def info(
         self,
@@ -145,6 +146,7 @@ class Logger(Filterer):
         stack_info: bool = False,
         stacklevel: int = 1,
         extra: Mapping[str, object] | None = None,
+        **kwargs,
     ) -> None: ...
     def warning(
         self,
@@ -154,6 +156,7 @@ class Logger(Filterer):
         stack_info: bool = False,
         stacklevel: int = 1,
         extra: Mapping[str, object] | None = None,
+        **kwargs,
     ) -> None: ...
     @deprecated("Deprecated; use warning() instead.")
     def warn(
@@ -173,6 +176,7 @@ class Logger(Filterer):
         stack_info: bool = False,
         stacklevel: int = 1,
         extra: Mapping[str, object] | None = None,
+        **kwargs,
     ) -> None: ...
     def exception(
         self,
@@ -182,6 +186,7 @@ class Logger(Filterer):
         stack_info: bool = False,
         stacklevel: int = 1,
         extra: Mapping[str, object] | None = None,
+        **kwargs,
     ) -> None: ...
     def critical(
         self,
@@ -191,6 +196,7 @@ class Logger(Filterer):
         stack_info: bool = False,
         stacklevel: int = 1,
         extra: Mapping[str, object] | None = None,
+        **kwargs,
     ) -> None: ...
     def log(
         self,
@@ -201,6 +207,7 @@ class Logger(Filterer):
         stack_info: bool = False,
         stacklevel: int = 1,
         extra: Mapping[str, object] | None = None,
+        **kwargs,
     ) -> None: ...
     def _log(
         self,
